@@ -12,29 +12,48 @@
 
 Made by MikePinku
 
-Web Archive Downloader is a Python CLI tool that downloads archived website snapshots from the Internet Archive Wayback Machine and saves them for local offline viewing.
+Download archived websites from the Internet Archive Wayback Machine with a simple Python CLI.
+This project is focused on practical offline archiving for Windows and Linux users.
 
-## Platform Support
+## ✨ Why This Project
+
+Web Archive Downloader helps you quickly capture archived snapshots and view them locally.
+It is designed to be simple, stable, and friendly for both beginners and power users.
+
+## 🧭 Table of Contents
+
+- [📌 Platform Support](#-platform-support)
+- [🚀 Features](#-features)
+- [⚙️ Setup and Installation](#-setup-and-installation)
+- [💻 Daily Use Installation](#-daily-use-installation)
+- [🧪 Usage Examples](#-usage-examples)
+- [📂 Output Structure](#-output-structure)
+- [❓ FAQ](#-faq)
+- [🤝 Contributing](#-contributing)
+- [🐞 Known Issues](#-known-issues)
+- [📝 What's Changed](#-whats-changed)
+
+## 📌 Platform Support
 
 This tool is intentionally limited to:
 - Windows
 - Linux
 
-If you run it on another OS, it exits with a clear message.
+If the program is run on another OS, it exits with a clear platform message.
 
-## Features
+## 🚀 Features
 
 - Download archived pages from normal URLs or direct Wayback URLs
-- Keep exact Wayback timestamp when a full Wayback link is used
+- Keep exact Wayback timestamp when a full Wayback link is provided
 - Download HTML and common assets (CSS, JS, images, media)
 - Rewrite links so saved pages work offline
-- Optional same-host crawl depth
+- Optional same-host crawl depth for broader page capture
 - Friendly CLI messages (welcome, progress, success, error)
-- Version flag support via --version
+- Built-in version output with --version
 
-## Setup and Installation
+## ⚙️ Setup and Installation
 
-### Option A: Setup with .venv (recommended)
+### Option A: Using .venv (recommended)
 
 Windows (PowerShell):
 
@@ -52,7 +71,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the tool:
+Quick verification:
 
 Windows:
 
@@ -66,7 +85,7 @@ Linux:
 python3 web_archive_downloader.py --help
 ```
 
-### Option B: Setup without .venv (system-wide or user install)
+### Option B: Without .venv (system-wide or user install)
 
 Windows:
 
@@ -82,19 +101,19 @@ python3 -m pip install --user -r requirements.txt
 python3 web_archive_downloader.py --help
 ```
 
-Note: On Linux distributions with externally managed Python environments, prefer Option A (.venv).
+Note: Some Linux distributions use externally managed Python environments. If that happens, use Option A.
 
-## Install the Tool for Daily Use
+## 💻 Daily Use Installation
 
-If you want to run it from anywhere on your computer:
+If you want to run the tool from anywhere:
 
 Windows:
 - Keep the project in a permanent folder.
-- Use the full command path or create a small .bat launcher in a folder that is in PATH.
+- Use a full path command or create a small .bat launcher in a directory that is already in PATH.
 
 Linux:
 - Keep the project in a permanent folder.
-- Create a shell alias in your shell profile (for example .bashrc):
+- Add an alias in your shell config (for example .bashrc):
 
 ```bash
 alias wad='python3 /absolute/path/to/web_archive_downloader.py'
@@ -106,7 +125,7 @@ Then run:
 wad --help
 ```
 
-## Usage
+## 🧪 Usage Examples
 
 Basic download:
 
@@ -120,10 +139,16 @@ Download with preferred timestamp:
 python web_archive_downloader.py https://example.com --timestamp 20200101120000
 ```
 
-Download from direct Wayback URL (exact snapshot):
+Download from a direct Wayback URL (exact snapshot):
 
 ```bash
 python web_archive_downloader.py https://web.archive.org/web/20260122131334/https://example.com
+```
+
+Download with crawl depth:
+
+```bash
+python web_archive_downloader.py https://example.com --depth 1
 ```
 
 Show version:
@@ -132,7 +157,7 @@ Show version:
 python web_archive_downloader.py --version
 ```
 
-## Output Structure
+## 📂 Output Structure
 
 ```text
 downloads/
@@ -141,7 +166,7 @@ downloads/
     assets/
 ```
 
-## FAQ
+## ❓ FAQ
 
 ### Who made this program and who are you?
 
@@ -149,44 +174,44 @@ yes, my name is Mickael H-G (known as pinkythegawd and MikePinku), i am born in 
 
 ### How was this program made?
 
-This tool was made in Python using:
+This tool was built in Python with:
 - requests for HTTP access
 - BeautifulSoup for HTML parsing and rewriting
-- argparse for command-line options
+- argparse for command-line argument handling
 
 ### Why are some pages or assets missing?
 
-Some assets are not available in the archive snapshot or return errors from Wayback. The tool skips unavailable assets so the full download process can continue.
+Some files do not exist in specific archive snapshots, and Wayback may return temporary errors. The downloader continues by skipping unavailable assets when possible.
 
-## Contributing My Project
+## 🤝 Contributing
 
 Contributions are welcome.
 
 1. Fork the project.
-2. Create a new branch for your changes.
+2. Create a new branch for your work.
 3. Make your changes with clear commit messages.
-4. Test on Windows or Linux.
-5. Open a pull request with a short explanation of what changed.
+4. Test your changes on Windows or Linux.
+5. Open a pull request with a short explanation.
 
-Suggested contribution areas:
-- Better asset type handling
-- Retry strategy and performance improvements
-- Better packaging and installer flow
-- Additional tests and docs
+Areas where contributions are especially helpful:
+- Better asset type coverage
+- Retry and network resilience improvements
+- Packaging and installer improvements
+- Tests and documentation
 
-## Bugs (Known Issues)
+## 🐞 Known Issues
 
 - Wayback endpoints can be slow or return temporary 5xx errors.
-- Some dynamic JavaScript-heavy pages may not work perfectly offline.
+- Some JavaScript-heavy sites may not fully work offline.
 - Not every archived asset exists for every timestamp.
-- Crawl depth above 0 can increase runtime significantly.
+- Higher crawl depth values can increase runtime significantly.
 
-## What's Changed (Version)
+## 📝 What's Changed
 
-### 1.0-rc1
+### v1.0-rc1
 
-- Added welcome screen in CLI
-- Added progress/success/error user messages
-- Added direct Wayback URL input support with exact timestamp handling
+- Added a welcome screen to the CLI
+- Added clear progress, success, and error messages
+- Added direct Wayback URL input with exact timestamp handling
 - Improved text decoding to reduce garbled characters
 - Added --version support
