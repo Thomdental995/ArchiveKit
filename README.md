@@ -1,6 +1,6 @@
 # Web Archive Downloader
 
-[![Release](https://img.shields.io/github/v/release/pinkythegawd/ArchiveKit?include_prereleases)](https://github.com/pinkythegawd/ArchiveKit/releases/tag/v1.0-rc1)
+[![Release](https://img.shields.io/github/v/tag/pinkythegawd/ArchiveKit?label=release)](https://github.com/pinkythegawd/ArchiveKit/releases/tag/v1.0-rc1)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-0A7E3B)](https://github.com/pinkythegawd/ArchiveKit)
 [![Open Source](https://img.shields.io/badge/open%20source-yes-1f883d)](https://github.com/pinkythegawd/ArchiveKit)
